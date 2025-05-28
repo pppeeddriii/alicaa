@@ -1,0 +1,80 @@
+<script>
+    var total_belanja = 1500000;
+    var discount;
+    if(total_belanja >1000000) {
+        discount = 0.10;
+    }
+    document.write(total_belanja-(total_belanja*discount))
+</script>
+
+<script>
+    var bilangan = 99;
+    if (bilangan % 2 == 0) {
+        document.write(bilangan +" adalah bilangan genap");
+    } else {
+        document.write(bilangan +" adalah bilangan ganjil");
+    }
+</script>
+
+<script>
+    var umur = 13;
+    if(umur >=0 && umur <=4){
+        document.write("Kategori Balita");
+    }
+    else if(umur >=5 && umur <=12){
+        document.write("kategori anak-anak")
+    }
+    else if(umur >=13 && umur <=17){
+        document.write("kategori Remaja");
+    }
+</script>
+
+<script>
+    var hari; 
+    switch (new Date().getDay()) {
+       case 0:
+        hari = "Minggu";
+        break;
+      case 1:
+        hari = "Senin";
+        break;
+      case 2:
+        hari = "Selasa";
+        break;
+      case 3:
+        hari = "Rabu";
+        break;
+      case 4:
+        hari = "Kamis";
+        break;
+      case 5:
+        hari = "Jumat";
+        break;
+      case 6:
+        hari = "Sabtu";
+        break;
+        }
+    document.write("Hari ini adalah " + hari);
+    </script>
+
+    <script>
+        for (i=1; i<=100; i++){
+            document.write("looping yang ke "+i+"<br>");
+        }
+    </script>
+
+<script>
+    var i = 0;
+    while (i<10){
+        document.write("Nilai i adalah :" +i+ "<br>")
+        i++;
+    }
+    </script>
+
+    <script>
+        var i = 1;
+        do {
+            document.write("Nilai i adalah :"+ i +"<br>");
+            i++;
+        } while (i <=10)
+    </script>

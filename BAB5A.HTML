@@ -1,0 +1,62 @@
+<!Doctype html>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Program Belajar</title>
+    </head>
+    <body>
+        <div>
+            Barang :
+            <select id="listbarang">
+                <option value="Buku" selected>Buku</option>
+                <option value="Tas" selected>Tas</option>
+                <option value="Pensil"selected>Pensil</option>
+                <option value="Penghapus"selected>penghapus</option>
+            </select>
+            <button id="tambah" onclick="cek_barang()">(+)</button>
+        </div>
+        <div>
+            jumlah :
+            <input type="text" id="jumlah">
+        </div>
+        <div id="barang"></div>
+        <div id="total"></div>
+
+        <script>
+            var harga;
+            var nama_barang;
+            var ket ="";
+            var jumlah=0;
+            var total=0;
+            var subtotal=0;
+        
+            function cek_barang (){
+                var name = document.getElementById("listbarang").Value;
+                switch(name){
+                    case'Buku':
+                         harga = 10000;
+                         nama_barang = "Buku";
+                         break;
+                    case'tas':
+                         harga = 50000;
+                         nama_barang = "Tas";
+                         break;
+                    case'Pensil':
+                         harga = 5000;
+                         nama_barang = "Pensil";
+                         break;
+                    case'Penghapus':
+                         harga = 15000;
+                         nama_barang = "Penghapus";
+                         break      
+                }
+                jumlah = parselnt (document.getElementById("jumlah".Value));
+                subtotal = jumlah * harga;
+                total = total + subtotal;
+                ket = ket + nama-barang + ":" + harga + ":" + jumlah + ":" +subtotal+"<br>";
+                document.getElementById("Barang").innerHTML = ket;
+                document.getElementById("Total").innerHTML = "Total Belanja =" + total;
+            }
+        </script>        
+    </body>
+    </html>
